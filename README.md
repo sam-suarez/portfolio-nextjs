@@ -2,7 +2,7 @@
 
 This is a personal portfolio website built using Next.js, Tailwind CSS, and Framer Motion. Deployed on Vercel.
 
-**Demo:** [samsuarez.dev](https://samsuarez.dev/)
+**Demo:** https://portfolio-nextjs-delta-one.vercel.app/
 
 ## License
 
