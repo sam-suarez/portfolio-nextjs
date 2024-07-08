@@ -7,12 +7,9 @@ import Button from '@/components/button'
 import { motion } from 'framer-motion'
 import { getResume } from '@/utils/general'
 import Link from 'next/link'
-import { HeroProps } from './types'
 import { fadeIn, staggerContainer } from '@/animations'
 
-const Hero = ({ data }: HeroProps) => {
-  const { subtitle, title } = data ?? {}
-
+const Hero = () => {
   return (
     <section
       className="min-h-[700px] h-[calc(100vh-73px-64px)] md:h-[calc(100vh-73px-84px)] flex items-center justify-center"
@@ -25,9 +22,9 @@ const Hero = ({ data }: HeroProps) => {
         whileInView="animate"
       >
         <div className="font-bold">
-          <motion.p variants={fadeIn}>{subtitle}</motion.p>
+          <motion.p variants={fadeIn}>👋 Hi, I'm</motion.p>
           <motion.h1 variants={fadeIn} className="text-5xl md:text-7xl">
-            {title}
+            Sam Suarez
             <span className="text-yellow">.</span>
           </motion.h1>
           <motion.p variants={fadeIn} className="mt-5 text-2xl">

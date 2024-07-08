@@ -1,0 +1,56 @@
+[
+  {
+    "image": "/icons/formfactory-icon.png",
+    "position": "Software Developer",
+    "company": "The Form Factory",
+    "startDate": "December 2021",
+    "endDate": null,
+    "overview": "As a Software Developer, I help develop headless Shopify stores using Hydrogen (Remix React + TypeScript), communicate with clients to understand requirements and suggest improvements, perform ongoing maintenance, and collaborate with cross-functional teams to enhance website performance and meet client objectives.",
+    "responsibilities": [
+      "Develop Headless Shopify stores using Shopify's latest technology Hydrogen (Remix React + TypeScript)",
+      "Communicate with clients to understand requirements and suggest improvements.",
+      "Perform ongoing maintenance and updates to ensure optimal website performance.",
+      "Collaborate with designers and QA teams to implement enhancements and meet client objectives."
+    ]
+  },
+  {
+    "image": "/icons/hometime-icon.png",
+    "position": "Web Developer",
+    "company": "Hometime",
+    "startDate": "November 2020",
+    "endDate": "April 2022",
+    "overview": "As a Web Developer, I was responsible for maintaining and updating the company website, utilizing Gatsby, GraphQL, and CMS integration ensuring seamless performance, while also actively participating in the development and enhancement of the overall platform.",
+    "responsibilities": [
+      "Managed website development and maintenance.",
+      "Communicated with clients to understand their needs and provide updates.",
+      "Utilized Content Management Systems (CMS) for website management and updates."
+    ]
+  },
+  {
+    "image": "/icons/3dk-icon.png",
+    "position": "UI Designer/Developer",
+    "company": "3D Kreative Solutions",
+    "startDate": "August 2018",
+    "endDate": "October 2020",
+    "overview": "As a UI Designer/Developer, I helped design user interface components using React and transformed these designs into reusable, efficient components for streamlined development.",
+    "responsibilities": [
+      "Designed user interfaces for web applications with a focus on user experience.",
+      "Developed responsive UI components using ReactJS.",
+      "Created and implemented web pages for company website. Conducted user research and usability testing.",
+      "Collaborated with backend teams for project delivery."
+    ]
+  },
+  {
+    "image": "/icons/fullmoon-icon.png",
+    "position": "Web Designer",
+    "company": "Fullmoon Web Solutions",
+    "startDate": "August 2017",
+    "endDate": "July 2018",
+    "overview": "As a Web Designer, I was responsible for creating digital banners and posters for marketing campaigns, design visually compelling landing pages, and implement effective SEO strategies to enhance online visibility and user engagement.",
+    "responsibilities": [
+      "Designed landing pages aligned with branding and marketing goals.",
+      "Integrated SEO strategies for higher search rankings and increased traffic.",
+      "Ensured responsive design and cross-browser compatability."
+    ]
+  }
+]

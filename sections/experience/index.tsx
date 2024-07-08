@@ -5,14 +5,12 @@ import Image from 'next/image'
 import React from 'react'
 import { motion } from 'framer-motion'
 import { mappedVariants } from '@/animations'
-import { ExperienceProps } from './types'
 import { getFormattedDate } from '@/utils/general'
 import RichText from '@/components/rich-text'
-import { ExperienceEntry } from '@/graphql/types/experience'
+import experience from '@/public/data/experience.json'
+import { ExperienceEntry } from './types'
 
-const Experience = ({ data }: ExperienceProps) => {
-  const { title, subtitle, experiencesCollection } = data ?? {}
-
+const Experience = () => {
   return (
     <section className="py-6 md:py-12 min-h-[700px]" id="experience">
       <motion.h1
@@ -22,7 +20,7 @@ const Experience = ({ data }: ExperienceProps) => {
         transition={{ bounce: false }}
         viewport={{ once: true }}
       >
-        {title}
+        Experience
         <span className="text-yellow">.</span>
       </motion.h1>
       <motion.p
@@ -32,10 +30,10 @@ const Experience = ({ data }: ExperienceProps) => {
         transition={{ bounce: false }}
         viewport={{ once: true }}
       >
-        {subtitle}
+        Where I&apos;ve worked throughout the years.
       </motion.p>
       <div className="relative mt-6 grid gap-4">
-        {experiencesCollection?.items?.map((experience, index) => {
+        {experience.map((experience, index) => {
           const isFirstIndex = index === 0
 
           return (
@@ -71,17 +69,9 @@ const ExperienceDetails = ({
 
   return (
     <>
-      {image?.url && (
-        <div className="relative h-[50px] w-[50px]">
-          <Image
-            src={image.url}
-            alt={position ?? ''}
-            fill
-            className="object-contain"
-            sizes="50px"
-          />
-        </div>
-      )}
+      <div className="relative h-[50px] w-[50px]">
+        <Image src={image} alt={position ?? ''} fill className="object-contain" sizes="50px" />
+      </div>
       <div
         className={clsx('flex items-center font-bold text-lg mt-3', {
           'text-black': isFirstIndex,
@@ -104,7 +94,7 @@ const ExperienceDetails = ({
       >
         Overview
       </p>
-      {overview && <RichText content={overview.json} />}
+      <p>{overview}</p>
       <p
         className={clsx('mt-3 text-xs', {
           'text-black': isFirstIndex,

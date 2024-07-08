@@ -4,12 +4,10 @@ import clsx from 'clsx'
 import { motion } from 'framer-motion'
 import Image from 'next/image'
 import React from 'react'
-import { SkillsProps } from './types'
 import { mappedVariants } from '@/animations'
+import skills from '@/public/data/skills.json'
 
-const Skills = ({ data }: SkillsProps) => {
-  const { title, subtitle, skillsCollection } = data ?? {}
-
+const Skills = () => {
   return (
     <section
       id="skills"
@@ -21,7 +19,7 @@ const Skills = ({ data }: SkillsProps) => {
         animate={{ opacity: 1, x: '0', filter: 'blur(0px)' }}
         transition={{ bounce: false }}
       >
-        {title}
+        Skills
         <span className="text-yellow">.</span>
       </motion.h1>
       <motion.p
@@ -30,10 +28,10 @@ const Skills = ({ data }: SkillsProps) => {
         animate={{ opacity: 1, x: '0', filter: 'blur(0px)' }}
         transition={{ bounce: false }}
       >
-        {subtitle}
+        Technologies and tools I&apos;ve used (in an actual work setting).
       </motion.p>
       <div className="mt-6 flex flex-wrap gap-1.5">
-        {skillsCollection?.items?.map((skill, index) => {
+        {skills.map((skill, index) => {
           const { title, image } = skill ?? {}
           const isInverted = ['Github', 'Next']
 
@@ -46,17 +44,16 @@ const Skills = ({ data }: SkillsProps) => {
               custom={index}
               variants={mappedVariants}
             >
-              {image?.url && (
-                <div className="relative h-[20px] w-[20px] md:h-[30px] w-[30px]">
-                  <Image
-                    src={image.url}
-                    alt={title ?? ''}
-                    fill
-                    sizes="30px"
-                    className={clsx('object-contain', { invert: isInverted.includes(title ?? '') })}
-                  />
-                </div>
-              )}
+              <div className="relative h-[20px] w-[20px] md:h-[30px] w-[30px]">
+                <Image
+                  src={image}
+                  alt={title ?? ''}
+                  fill
+                  sizes="30px"
+                  className={clsx('object-contain', { invert: isInverted.includes(title ?? '') })}
+                />
+              </div>
+
               {title}
             </motion.div>
           )

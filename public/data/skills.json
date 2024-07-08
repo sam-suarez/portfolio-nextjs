@@ -1,0 +1,110 @@
+[
+  {
+    "title": "HTML5",
+    "image": "/icons/html-icon.png"
+  },
+  {
+    "title": "CSS3",
+    "image": "/icons/css-icon.png"
+  },
+  {
+    "title": "JavaScript",
+    "image": "/icons/javascript-icon.png"
+  },
+  {
+    "title": "jQuery",
+    "image": "/icons/jquery-icon.png"
+  },
+  {
+    "title": "TypeScript",
+    "image": "/icons/typescript-icon.png"
+  },
+  {
+    "title": "Sass",
+    "image": "/icons/sass-icon.png"
+  },
+  {
+    "title": "Bootstrap",
+    "image": "/icons/bootstrap-icon.png"
+  },
+  {
+    "title": "CSS Modules",
+    "image": "/icons/css-modules-icon.png"
+  },
+  {
+    "title": "Chakra UI",
+    "image": "/icons/chakraui-icon.png"
+  },
+  {
+    "title": "Styled-components",
+    "image": "/icons/styled-components-icon.png"
+  },
+  {
+    "title": "Framer",
+    "image": "/icons/framer-icon.png"
+  },
+  {
+    "title": "NPM",
+    "image": "/icons/npm-icon.png"
+  },
+  {
+    "title": "NodeJS",
+    "image": "/icons/nodejs-icon.png"
+  },
+  {
+    "title": "GitHub",
+    "image": "/icons/github-icon.png"
+  },
+  {
+    "title": "Git",
+    "image": "/icons/git-icon.png"
+  },
+  {
+    "title": "Gatsby",
+    "image": "/icons/gatsby-icon.png"
+  },
+  {
+    "title": "Contentful",
+    "image": "/icons/contentful-icon.png"
+  },
+  {
+    "title": "Shopify",
+    "image": "/icons/shopify-icon.png"
+  },
+  {
+    "title": "Hydrogen",
+    "image": "/icons/hydrogen-icon.png"
+  },
+  {
+    "title": "React",
+    "image": "/icons/react-icon.png"
+  },
+  {
+    "title": "Remix",
+    "image": "/icons/remix-icon.png"
+  },
+  {
+    "title": "Next",
+    "image": "/icons/nextjs-icon.png"
+  },
+  {
+    "title": "Storybook",
+    "image": "/icons/storybook-icon.png"
+  },
+  {
+    "title": "GraphQL",
+    "image": "/icons/graphql-icon.png"
+  },
+  {
+    "title": "Figma",
+    "image": "/icons/figma-icon.png"
+  },
+  {
+    "title": "Adobe XD",
+    "image": "/icons/xd-icon.png"
+  },
+  {
+    "title": "Photoshop",
+    "image": "/icons/photoshop-icon.png"
+  }
+]
